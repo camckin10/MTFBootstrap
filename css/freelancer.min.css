@@ -9,16 +9,15 @@ h4,
 h5,
 h6 {
     font-weight: 700;
-    font-family: Montserrat;
-    color: black;
+    font-family: Montserrat
 }
 
 #cursive {
     font-family: Pacifico;
+    color: #1d2124;
 }
 
-
-/*hr.star-dark,
+hr.star-dark,
 hr.star-light {
     max-width: 15rem;
     padding: 0;
@@ -40,24 +39,23 @@ hr.star-light:after {
     font-size: 2em
 }
 
-/*hr.star-light {
-    /*border-color: #fff*/
+hr.star-light {
+    border-color: #fff
+}
 
+hr.star-light:after {
+    color: #1d2124;
+    background-color: #fff294
+}
 
-/*hr.star-light:after {
-    color: #fff;
-    background-color: #2c3e50
-}*/
-
-
-/*hr.star-dark {
+hr.star-dark {
     border-color: #2c3e50
 }
 
 hr.star-dark:after {
     color: #2c3e50;
     background-color: #fff
-}*/
+}
 
 section {
     padding: 6rem 0
@@ -97,7 +95,7 @@ section h2 {
 .scroll-to-top a {
     width: 3.5rem;
     height: 3.5rem;
-    background-color: #ecf15aed(216, 210, 30, 0.5);
+    background-color: rgba(33, 37, 41, .5);
     line-height: 3.1rem
 }
 
@@ -109,7 +107,7 @@ section h2 {
 }
 
 #mainNav .navbar-brand {
-    color: #2c3e50(210, 143, 219)
+    color: #1d2124
 }
 
 #mainNav .navbar-nav {
@@ -117,15 +115,12 @@ section h2 {
     letter-spacing: .0625rem
 }
 
-
-/*font color for nav bar tabs*/
-
 #mainNav .navbar-nav li.nav-item a.nav-link {
-    color: #fff
+    color: #1d2124
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-    color: #557bef
+    color: #fff
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:active,
@@ -134,7 +129,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-    color: #18bc9c
+    color: #fff294;
 }
 
 #mainNav .navbar-toggler {
@@ -161,13 +156,13 @@ section h2 {
     }
     #mainNav .navbar-nav>li.nav-item>a.nav-link.active {
         color: #fff;
-        background: #ecf15aed
+        background: #fff294;
     }
     #mainNav .navbar-nav>li.nav-item>a.nav-link.active:active,
     #mainNav .navbar-nav>li.nav-item>a.nav-link.active:focus,
     #mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover {
         color: #fff;
-        background: #ecf15aed
+        background: #fff294;
     }
     #mainNav.navbar-shrink {
         padding-top: .5rem;
@@ -207,9 +202,6 @@ header.masthead h2 {
     }
 }
 
-
-/*host section a.ka. portfolio section*/
-
 .portfolio {
     margin-bottom: -15px
 }
@@ -226,7 +218,7 @@ header.masthead h2 {
     -moz-transition: all ease .5s;
     transition: all ease .5s;
     opacity: 0;
-    background-color: #ecf15aed;
+    background-color: rgba(24, 188, 156, .9)
 }
 
 .portfolio .portfolio-item .portfolio-item-caption:hover {
@@ -282,255 +274,54 @@ header.masthead h2 {
     }
 }
 
+.portfolio .flip-container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    perspective: 1000px
+}
 
-/*interactive code--flipping circles/*
-/* entire container, keeps perspective */
-
-
-/*flip image test #2*/
-
-
-/*label {
-    -webkit-perspective: 1000px;
-    perspective: 1000px;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    display: block;
-    width: 300px;
+.portfolio .flip-cards div {
+    width: 200px;
     height: 200px;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-}
-
-.card {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transition: all 600ms;
-    transition: all 600ms;
-    z-index: 20;
-}
-
-.card div {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: #FFF;
-    text-align: center;
-    line-height: 200px;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border-radius: 2px;
-}
-
-.card .back {
-    background: #222;
-    color: #FFF;
-    -webkit-transform: rotateX(180deg);
-    transform: rotateX(180deg);
-}
-
-label:hover .card {
-    -webkit-transform: rotateX(20deg);
-    transform: rotateX(20deg);
-    box-shadow: 0 20px 20px rgba(50, 50, 50, .2);
-}
-
-input {
-    display: none;
-}
-
-:checked+.card {
-    transform: rotateX(180deg);
-    -webkit-transform: rotateX(180deg);
-}
-
-label:hover :checked+.card {
-    transform: rotateX(160deg);
-    -webkit-transform: rotateX(160deg);
-    box-shadow: 0 20px 20px rgba(255, 255, 255, .2);
-}
-
-
-/*end flip image trial #2*/
-
-
-/*flip image trial #3*/
-
-
-/*#f1_container {
-    position: relative;
-    margin: 10px auto;
-    width: 450px;
-    height: 281px;
-    z-index: 1;
-}
-
-#f1_container {
-    perspective: 1000;
-}
-
-#f1_card {
-    width: 60%;
-    height: 60%;
-    transform-style: preserve-3d;
-    transition: all 1.0s linear;
-}
-
-#f1_container:hover #f1_card {
-    transform: rotateY(180deg);
-    box-shadow: -5px 5px 5px #aaa;
-}
-
-.face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-}
-
-.face.back {
-    display: block;
-    transform: rotateY(180deg);
-    box-sizing: border-box;
-    padding: 10px;
-    color: white;
-    text-align: center;
-    background-color: #aaa;
-}
-
-
-/*.flip-container {
-    perspective: 1000px;
-}
-
-
-/* flip the pane when hovered */
-
-
-/*.flip-container:hover .flipper,
-.flip-container.hover .flipper {
-    transform: rotateY(160deg);
-}
-
-.flip-container,
-.front,
-.back {
-    width: 320px;
-    height: 480px;
-}
-
-
-/* flip speed goes here */
-
-
-/*.flipper {
-    transition: 0.6s;
-    transform-style: preserve-3d;
-    position: relative;
-}
-
-
-/* hide back of pane during swap */
-
-
-/*.front,
-.back {
-    backface-visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-
-/* front pane, placed above back */
-
-
-/*.front 
-    color: black;
-    z-index: 2;
-    /* for firefox 31 */
-
-
-/* transform: rotateY(0deg);
-}
-
-
-/* back, initially hidden pane */
-
-
-/*.back {
-    color: black;
-    transform: rotateY(180deg);
-}
-
-
-/*flip test trial #4*/
-
-.flip-container {
-    position: relative;
-    -webkit-perspective: 1000;
-    perspective: 1000;
-}
-
-.flip-cards {
-    width: 200px;
-    height: 291px;
-    position: relative;
-    float: left;
-    margin-left: 5px;
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-}
-
-.flip-cards:hover {
-    transform: rotateY( 180deg);
-    -webkit-transform: rotateY(180deg);
-}
-
-.flip-cards div {
-    width: 200px;
-    height: 291px;
-    position: absolute;
     border-radius: 15px;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
 }
 
-.front-card {
+.portfolio .flip-cards {
+    width: 200px;
+    height: 200px;
+    margin-left: 5px;
+    transition: all 1s ease;
+    transform-style: preserve-3d
+}
+
+.portfolio .flip-cards:hover {
+    transform: rotateY(180deg)
+}
+
+.portfolio .front-card {
     z-index: 2;
+    background-color: #000
 }
 
-.reverse-card {
+.portfolio .reverse-card {
     -webkit-transform: rotateY(180deg);
-    transform: rotateY( 180deg);
+    transform: rotateX(180deg)
 }
 
-#card1 {
-    background-image: url('/img/MTFLogos2/karen.png');
+.portfolio #card1 {
+    background-color: #8a2be2
 }
 
-#card2 {
-    background-image: url('/img/MTFLogos2/karen.png');
+.portfolio #card2 {
+    background-color: #00f
 }
 
-#card3 {
-    background-image: url('/img/MTFLogos2/karen.png');
+.portfolio #card3 {
+    background-color: green
 }
-
-
-/*end code for flipping coins*/
-
-
-/*end host a.k.a. portfolio section*/
 
 .floating-label-form-group {
     position: relative;
@@ -579,32 +370,32 @@ label:hover :checked+.card {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #ecf15aed
+    color: #f9e279;
 }
 
 form .row:first-child .floating-label-form-group {
-    border-top: 1px solid #020f1d
+    border-top: 1px solid #e9ecef
 }
 
 .footer {
     padding-top: 5rem;
     padding-bottom: 5rem;
-    background-color: #ecf15aed;
-    color: rgb(24, 22, 22)
+    background-color: #fff294;
+    color: #1d2124
 }
 
 .copyright {
-    background-color: #ecf15aed;
+    background-color: #fff294;
 }
 
 a {
-    color: #000f0c
+    color: #fff
 }
 
 a:active,
 a:focus,
 a:hover {
-    color: #031a15
+    color: #1d2124
 }
 
 .btn {
@@ -612,41 +403,41 @@ a:hover {
 }
 
 .bg-primary {
-    background-color: #ecf15aed!important
+    background-color: #f9e279!important
 }
 
 .bg-secondary {
-    background-color: #ecf15aed!important
+    background-color: #fff294!important
 }
 
 .text-primary {
-    color: #011914!important
+    color: #1d2124!important
 }
 
 .text-secondary {
-    color: #ecf15aed!important
+    color: #2c3e50!important
 }
 
 .btn-primary {
-    background-color: #f8f17b;
-    border-color: #f1e179
+    background-color: #f9e279;
+    border-color: #f9e279;
 }
 
 .btn-primary:active,
 .btn-primary:focus,
 .btn-primary:hover {
-    background-color: #e6ade7;
-    border-color: #12578f
+    background-color: #fff294;
+    border-color: #fff294;
 }
 
 .btn-secondary {
-    background-color: #2c3e50;
+    background-color: #fff294;
     border-color: #2c3e50
 }
 
 .btn-secondary:active,
 .btn-secondary:focus,
 .btn-secondary:hover {
-    background-color: #ef99ee;
-    border-color: #cddae7
+    background-color: #fff294;
+    border-color: #1a252f
 }

@@ -12,9 +12,6 @@ h6 {
     font-family: 'Montserrat';
 }
 
-
-/*code for star under each header in each section*/
-
 hr.star-light,
 hr.star-dark {
     max-width: 15rem;
@@ -43,7 +40,7 @@ hr.star-light {
 
 hr.star-light:after {
     color: #fff;
-    background-color: #FFEF22;
+    background-color: #18BC9C;
 }
 
 hr.star-dark {
@@ -54,9 +51,6 @@ hr.star-dark:after {
     color: #2C3E50;
     background-color: white;
 }
-
-
-/*end code for star in header section*/
 
 section {
     padding: 6rem 0;
@@ -99,9 +93,6 @@ section h2 {
     background-color: rgba(33, 37, 41, 0.5);
     line-height: 3.1rem;
 }
-
-
-/*navigation bar styling*/
 
 #mainNav {
     padding-top: 1rem;
@@ -177,12 +168,6 @@ section h2 {
     }
 }
 
-
-/*end navigation styling*/
-
-
-/*header masthead styling*/
-
 header.masthead {
     padding-top: calc(6rem + 72px);
     padding-bottom: 6rem;
@@ -212,12 +197,6 @@ header.masthead h2 {
     }
 }
 
-
-/*end header masthead stylings*/
-
-
-/*portfolio section for hosts*/
-
 .portfolio {
     margin-bottom: -15px;
 }
@@ -234,7 +213,7 @@ header.masthead h2 {
     -moz-transition: all ease 0.5s;
     transition: all ease 0.5s;
     opacity: 0;
-    background-color: rgb(242, 247, 103);
+    background-color: rgba(24, 188, 156, 0.9);
 }
 
 .portfolio .portfolio-item .portfolio-item-caption:hover {
@@ -290,8 +269,54 @@ header.masthead h2 {
     }
 }
 
+.portfolio .flip-container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    perspective: 1000px;
+}
 
-/*end portfolio section for hosts*/
+.portfolio .flip-cards div {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 15px;
+    backface-visibility: hidden;
+}
+
+.portfolio .flip-cards {
+    width: 200px;
+    height: 200px;
+    margin-left: 5px;
+    transition: all 1s ease;
+    transform-style: preserve-3d;
+}
+
+.portfolio .flip-cards:hover {
+    transform: rotateY(180deg);
+}
+
+.portfolio .front-card {
+    z-index: 2;
+    background-color: black;
+}
+
+.portfolio .reverse-card {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateX(180deg);
+}
+
+.portfolio #card1 {
+    background-color: blueviolet;
+}
+
+.portfolio #card2 {
+    background-color: blue;
+}
+
+.portfolio #card3 {
+    background-color: green;
+}
 
 .floating-label-form-group {
     position: relative;
@@ -350,16 +375,16 @@ form .row:first-child .floating-label-form-group {
 .footer {
     padding-top: 5rem;
     padding-bottom: 5rem;
-    background-color: rgb(83, 149, 215);
+    background-color: #2C3E50;
     color: #fff;
 }
 
 .copyright {
-    background-color: #6697c6;
+    background-color: #1a252f;
 }
 
 a {
-    color: rgb(188, 122, 24);
+    color: #18BC9C;
 }
 
 a:focus,
@@ -373,7 +398,7 @@ a:active {
 }
 
 .bg-primary {
-    background-color: #18BC9C !important;
+    background-color: rgb(230, 141, 238) !important;
 }
 
 .bg-secondary {
@@ -411,5 +436,3 @@ a:active {
     background-color: #1a252f;
     border-color: #1a252f;
 }
-
-====
