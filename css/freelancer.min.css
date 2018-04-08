@@ -129,7 +129,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-    color: #fff294;
+    color: black;
 }
 
 #mainNav .navbar-toggler {
@@ -312,15 +312,19 @@ header.masthead h2 {
 }
 
 .portfolio #card1 {
-    background-color: #8a2be2
+    background-color: #00f;
 }
 
 .portfolio #card2 {
-    background-color: #00f
+    background-color: purple;
 }
 
 .portfolio #card3 {
-    background-color: green
+    background-color: green;
+}
+
+.portfolio #card4 {
+    background-color: orange;
 }
 
 .floating-label-form-group {
