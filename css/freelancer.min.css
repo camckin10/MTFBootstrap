@@ -320,10 +320,29 @@ header.masthead h2 {
 }
 
 .portfolio #card3 {
-    background-color: green;
+    background-color: pink;
 }
 
 .portfolio #card4 {
+    background-color: orange;
+}
+
+
+/*background color for reverse side of coin*/
+
+.portfolio #reversecard1 {
+    background-color: #00f;
+}
+
+.portfolio #reversecard2 {
+    background-color: purple;
+}
+
+.portfolio #reversecard3 {
+    background-color: pink;
+}
+
+.portfolio #reversecard4 {
     background-color: orange;
 }
 

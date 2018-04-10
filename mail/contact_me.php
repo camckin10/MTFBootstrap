@@ -1,8 +1,10 @@
+
+
 <?php
 // Check for empty fields
 if(empty($_POST['name'])  		||
    empty($_POST['email']) 		||
-   empty($_POST['phone']) 		||
+   //empty($_POST['phone']) 		||
    empty($_POST['message'])	||
    !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
    {
@@ -12,7 +14,7 @@ if(empty($_POST['name'])  		||
 	
 $name = strip_tags(htmlspecialchars($_POST['name']));
 $email_address = strip_tags(htmlspecialchars($_POST['email']));
-$phone = strip_tags(htmlspecialchars($_POST['phone']));
+//$phone = strip_tags(htmlspecialchars($_POST['phone']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
 	
 // Create the email and send the message
@@ -22,5 +24,8 @@ $email_body = "You have received a new message from your website contact form.\n
 $headers = "From: noreply@yourdomain.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $headers .= "Reply-To: $email_address";	
 mail($to,$email_subject,$email_body,$headers);
-return true;			
+//header("Location: http://localhost:8888");
+//return true;			
 ?>
+<script> window.location = "http://localhost:8888";
+</script>
