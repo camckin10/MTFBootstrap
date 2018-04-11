@@ -27,5 +27,5 @@ mail($to,$email_subject,$email_body,$headers);
 //header("Location: http://localhost:8888");
 //return true;			
 ?>
-<script> window.location = "http://localhost:8888";
+<script> window.location = "http://localhost:5000";
 </script>

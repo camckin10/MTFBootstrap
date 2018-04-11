@@ -27,10 +27,14 @@
     },
     "dependencies": {
         "bootstrap": "4.0.0",
+        "composer": "^2.0.2",
         "font-awesome": "4.7.0",
         "jquery": "3.3.1",
         "jquery.easing": "^1.4.1",
         "magnific-popup": "^1.1.0"
+    },
+    "scripts": {
+        "start": "node home.html"
     },
     "devDependencies": {
         "browser-sync": "2.23.6",
