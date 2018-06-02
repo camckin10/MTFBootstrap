@@ -116,13 +116,13 @@ section h2 {
     }
     #mainNav .navbar-nav>li.nav-item>a.nav-link.active {
         color: #fff;
-        background: #fff294;
+        background: #94d1ff;
     }
     #mainNav .navbar-nav>li.nav-item>a.nav-link.active:active,
     #mainNav .navbar-nav>li.nav-item>a.nav-link.active:focus,
     #mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover {
         color: #fff;
-        background: #fff294;
+        background: #dc8b66;
     }
     #mainNav.navbar-shrink {
         padding-top: .5rem;
@@ -264,12 +264,12 @@ form .row:first-child .floating-label-form-group {
 .footer {
     padding-top: 5rem;
     padding-bottom: 5rem;
-    background-color: #fff294;
+    background-color: #94bbff;
     color: #1d2124
 }
 
 .copyright {
-    background-color: #fff294;
+    background-color: #94e6ff;
 }
 
 a {
@@ -287,7 +287,7 @@ a:hover {
 }
 
 .bg-primary {
-    background-color: #f9e279!important
+    background-color: #f979ea!important
 }
 
 .bg-secondary {
@@ -304,7 +304,7 @@ a:hover {
 
 .btn-primary {
     background-color: #f9e279;
-    border-color: #f9e279;
+    border-color: #e9301c;
 }
 
 .btn-primary:active,
