@@ -12,6 +12,10 @@ h6 {
     font-family: Montserrat
 }
 
+.headerImage {
+    background-image: url("./img/200Logos/BannerJPEG.jpg");
+}
+
 #cursive {
     font-family: Pacifico;
     color: #1d2124;
